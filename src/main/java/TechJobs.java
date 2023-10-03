@@ -124,7 +124,7 @@ public class TechJobs {
         }
         for (HashMap<String, String> job : someJobs) {
             String jobs = "*****\n" +
-                    "position type:" + job.get("position type") +  "\n" +
+                    "position type: " + job.get("position type") +  "\n" +
                     "name: " + job.get("name") + "\n" +
                     "employer: " + job.get("employer") + "\n" +
                     "location: " + job.get("location") + "\n" +

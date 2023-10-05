@@ -121,16 +121,16 @@ public class TechJobs {
         if (someJobs.isEmpty()) {
             System.out.println("No Results");
         } else {
+
             for (HashMap<String, String> job : someJobs) {
-                String jobs = "\n*****\n" +
-                        "position type: " + job.get("position type") + "\n" +
-                        "name: " + job.get("name") + "\n" +
-                        "employer: " + job.get("employer") + "\n" +
-                        "location: " + job.get("location") + "\n" +
-                        "core competency: " + job.get("core competency") + "\n" +
-                        "*****";
+                String jobs = "\n*****";
+                for(String key : job.keySet()) {
+                     jobs += "\n" + key + ": " + job.get(key);
+                }
+                jobs += "\n*****";
                 System.out.println(jobs);
             }
+
         }
     }
 }
